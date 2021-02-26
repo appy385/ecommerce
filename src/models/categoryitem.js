@@ -17,14 +17,14 @@ module.exports = (sequelize, DataTypes) => {
     category_pid: {
       type: DataTypes.INTEGER,
       references: {
-        model: Category,
+        model: 'Category',
         key: 'id',
       },
     },
     item_pid: {
       type: DataTypes.INTEGER,
       references: {
-        model: Item,
+        model: 'Item',
         key: 'id',
       },
     },
